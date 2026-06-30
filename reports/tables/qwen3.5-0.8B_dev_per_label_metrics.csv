@@ -1,0 +1,37 @@
+language,language_name,split,training_status,label,f1
+eng,English,dev,trained,anger,0.6896551724137931
+eng,English,dev,trained,disgust,0.0
+eng,English,dev,trained,fear,0.7472527472527473
+eng,English,dev,trained,joy,0.6909090909090909
+eng,English,dev,trained,sadness,0.7631578947368421
+eng,English,dev,trained,surprise,0.7096774193548387
+swa,Swahili,dev,trained,anger,0.21153846153846154
+swa,Swahili,dev,trained,disgust,0.208
+swa,Swahili,dev,trained,fear,0.1
+swa,Swahili,dev,trained,joy,0.5095890410958904
+swa,Swahili,dev,trained,sadness,0.2631578947368421
+swa,Swahili,dev,trained,surprise,0.34759358288770054
+ukr,Ukrainian,dev,trained,anger,0.45454545454545453
+ukr,Ukrainian,dev,trained,disgust,0.25
+ukr,Ukrainian,dev,trained,fear,0.6582278481012658
+ukr,Ukrainian,dev,trained,joy,0.5454545454545454
+ukr,Ukrainian,dev,trained,sadness,0.5873015873015873
+ukr,Ukrainian,dev,trained,surprise,0.5079365079365079
+deu,German,dev,zero-shot,anger,0.5217391304347826
+deu,German,dev,zero-shot,disgust,0.12121212121212122
+deu,German,dev,zero-shot,fear,0.2777777777777778
+deu,German,dev,zero-shot,joy,0.5984251968503937
+deu,German,dev,zero-shot,sadness,0.5066666666666667
+deu,German,dev,zero-shot,surprise,0.31746031746031744
+ptbr,Brazilian Portuguese,dev,zero-shot,anger,0.5376344086021505
+ptbr,Brazilian Portuguese,dev,zero-shot,disgust,0.0
+ptbr,Brazilian Portuguese,dev,zero-shot,fear,0.2222222222222222
+ptbr,Brazilian Portuguese,dev,zero-shot,joy,0.7155963302752294
+ptbr,Brazilian Portuguese,dev,zero-shot,sadness,0.5384615384615384
+ptbr,Brazilian Portuguese,dev,zero-shot,surprise,0.3595505617977528
+yor,Yoruba,dev,zero-shot,anger,0.05555555555555555
+yor,Yoruba,dev,zero-shot,disgust,0.0
+yor,Yoruba,dev,zero-shot,fear,0.1111111111111111
+yor,Yoruba,dev,zero-shot,joy,0.041666666666666664
+yor,Yoruba,dev,zero-shot,sadness,0.12779552715654952
+yor,Yoruba,dev,zero-shot,surprise,0.24561403508771928

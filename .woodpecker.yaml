@@ -1,0 +1,22 @@
+labels:
+  backend: local
+  platform: linux/amd64
+
+steps:
+  - name: Setup Attic
+    image: bash
+    environment:
+      ATTIC_KEY:
+        from_secret: attic_key
+    commands:
+      - attic login lounge-rocks https://cache.lounge.rocks $ATTIC_KEY --set-default
+
+  - name: Build dev shell and push to Attic
+    image: bash
+    commands:
+      - nix-fast-build --no-nom --skip-cached --attic-cache lounge-rocks:nix-cache --flake ".#devShells.x86_64-linux.default"
+
+when:
+  - event: manual
+  - branch: main
+    event: push

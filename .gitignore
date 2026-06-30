@@ -1,0 +1,38 @@
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+outputs/
+notebooks/reports/
+reports/figures/*.png
+!reports/figures/qwen3.5_language_size_heatmap.png
+!reports/figures/qwen3.5_language_size_heatmap_wide.png
+!reports/figures/qwen3.5_scaling_curve.png
+!reports/figures/qwen3.5_chinese_base_vs_finetuned.png
+!reports/figures/qwen3.5-0.8B_macro_f1_by_language.png
+!reports/figures/qwen3.5-0.8B_macro_f1_improvement_by_language.png
+!reports/figures/qwen3.5-0.8B_multiseed_macro_f1_bands.png
+!reports/figures/qwen3.5-0.8B_per_label_f1_by_language.png
+!reports/figures/qwen3.5-0.8B_per_label_f1_improvement.png
+!reports/figures/macro_f1_by_language.png
+!reports/figures/per_label_f1_by_language.png
+reports/lime/*.html
+
+# Generated tables: ignore everything by default, then track only the small
+# aggregate CSVs that back the report's tables/figures so the notebook renders
+# end-to-end on any machine (GPU or not). The large row-level prediction dumps
+# and the per-seed sweep histories stay ignored (regenerable, ~MB each).
+reports/tables/*.csv
+!reports/tables/qwen3.5_*_dev.csv
+!reports/tables/*_multiseed_macro_f1_bands.csv
+!reports/tables/*_language_metrics.csv
+!reports/tables/*_per_label_metrics.csv
+!reports/tables/*_macro_f1.csv
+!reports/tables/*_per_label_f1.csv
+!reports/tables/*_training_data_overview.csv
+
+# Smoke-test artifacts
+reports/*_smoke_*
+
+# Nix
+.cache/

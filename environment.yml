@@ -1,0 +1,27 @@
+name: mmd2-emotion
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyter
+  - ipykernel
+  - ipywidgets
+  - tqdm
+  - black
+  - pip
+  - pip:
+      - accelerate>=0.30.0
+      - datasets>=2.19.0
+      - lime>=0.2.0.1
+      - flash-linear-attention # only on NVIDIA
+      # - causal-conv1d # only on NVIDIA - current issues when installing
+      # Qwen3.5 (model_type "qwen3_5") is only recognized by transformers from git main; released
+      # versions (<=4.57) raise "Transformers does not recognize this architecture" on model load.
+      - transformers @ git+https://github.com/huggingface/transformers.git@main
